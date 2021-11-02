@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>제주 음식점</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #440;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1400px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type:square;/*none --> sqare*/
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 350px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #440;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- <h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p> -->
+
+<header>
+  <h2>JEJU restaurant</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li>위치 정보</li>
+      <li><a href="https://www.google.com/maps/place/%EC%A0%9C%EC%A3%BC%EC%84%A0/@33.3076614,126.3152979,17z/data=!3m1!4b1!4m5!3m4!1s0x350c5dce8642bcd9:0x679c8e3b69809a6a!8m2!3d33.3076614!4d126.3174866" target="_blank">한식</a></li>
+      <li><a href="https://www.google.com/maps/place/%EC%8A%A4%EC%B9%B4%EC%9D%B4+%EC%98%A8+%ED%8C%8C%EC%9D%B4%EB%B8%8C+%EB%8B%A4%EC%9D%B4%EB%8B%9D/@33.3076659,126.3155072,17z/data=!3m1!4b1!4m5!3m4!1s0x350c5dcbb58795b3:0x846e335511d2461d!8m2!3d33.3076614!4d126.3177012" target="_blank">양식</a></li>
+      <li><a href="https://www.google.com/maps/place/%EB%AF%B8%EC%B9%9C%EB%B6%80%EC%97%8C/@33.517089,126.5210163,17z/data=!3m1!4b1!4m5!3m4!1s0x350ce35650c41cc7:0x2b02d08c1d8655a7!8m2!3d33.5170845!4d126.5232103" target="_blank">일식</a></li>
+      <li><a href="https://www.google.com/maps/place/%EB%B4%84%EB%82%A0/@33.4624635,126.307397,17z/data=!3m1!4b1!4m5!3m4!1s0x350cf5abb17556f3:0x307525d39dac57!8m2!3d33.462459!4d126.309591" target="_blank">카페</a></li>
+
+    </ul>
+  </nav>
+
+  <article>
+    <h1>한식: 제주선</h1>
+    <p>제주 고유의 맛을 담아낸 정갈한 한상차림, 濟州膳제주선
+신선한 제철 식재료와 특산물로 정성껏 차린 한 상에 제주 자연과 계절을 고스란히 담았다. 미식가들의 입맛을 사로잡는 제주 성게 미역국, 통갈치구이 등 해산물 밥상부터, 삼계탕, 비빔밥, 등 다양한 한식메뉴가 정갈하게 차려진다. 김병은 셰프의 시그니처 '배 백김치'는 시원하고 깔끔한 맛이 일품이다. 고소리술, 오메기술 등 다양한 제주 전통주가 마련되어 있어, 특별한 날을 위한 레스토랑으로 제격이다.</p> <img src="https://api.cdn.visitjeju.net/photomng/imgpath/202012/30/376d78dd-1635-43d8-91a1-5b645fdf51a0.JPG" alt="https://api.cdn.visitjeju.net/photomng/imgpath/202012/30/376d78dd-1635-43d8-91a1-5b645fdf51a0.JPG"  width="300" height="200" >
+
+  </article>
+  <article>
+    <h1>양식: 스카이 온 파이브 다이닝</h1>
+    <p>이국적인 뷰와 함께하는 프리미엄 뷔페 레스토랑
+셰프가 엄선한 신선한 식재료로 준비한 다채로운 메뉴를 즐길 수 있다. 한식부터 일식, 중식, 양식은 물론 제주 특산물을 사용한 스페셜 메뉴까지 환상적인 뷰와 함께 품격 있는 뷔페를 경험할 수 있다.</p> <img src="https://api.cdn.visitjeju.net/photomng/imgpath/202012/30/9d33aa31-80bf-4077-9c08-64eca8f9e815.jpg" alt="https://api.cdn.visitjeju.net/photomng/imgpath/202012/30/9d33aa31-80bf-4077-9c08-64eca8f9e815.jpg" width="300" height="200">
+    </article>
+    <article>
+    <h1>일식: 미친부엌</h1>
+    <p>맛 미(味)와 친하다의 친(親), 미친부엌은 서두르지 않으면 어김없이 대기순번을 받아야 하는 제주 시내의 소문난 맛집이다. 순발력 있는 창의적인 메뉴와 맛, 젊은이들을 사로잡은 경쾌한 분위기이다. 혼술, 혼밥하는 이들을 위한 고독한 미식가, 고독한 애주가 세트메뉴, 공오빠 크림짬뽕 등은 이름도 재미있지만 맛도 정점을 찍는다.전체적으로 맛, 분위기 모두 훌륭한 기분 좋은 집이다.</p> <img src="https://api.cdn.visitjeju.net/photomng/imgpath/201910/01/9ad8261f-808e-4a32-ade6-6c8dbcfa4ffe.jpg" alt="https://api.cdn.visitjeju.net/photomng/imgpath/201910/01/9ad8261f-808e-4a32-ade6-6c8dbcfa4ffe.jpg" width="300" height="200">
+    </article>
+    <article>
+    <h1>까페: 봄날카페</h1>
+    <p>드라마의 주인공이 일하던 카페라서 유명해졌다.해변을 바라보며 차 한잔의 여유를 즐기기에 좋으며 제주 돌담의 정취를 느낄 수 있다. 카페견 웰시코키 네마리가 반겨준다. 근처 한담해변을 산책하거나 올레길을 걷다가 카페에 들러 휴식을 취할 수 있다.</p> <img src="https://api.cdn.visitjeju.net/photomng/imgpath/201910/22/5545b872-9a2a-4d03-84b0-402a1c5e2149.jpg" alt="https://api.cdn.visitjeju.net/photomng/imgpath/201910/22/5545b872-9a2a-4d03-84b0-402a1c5e2149.jpg" width="300" height="200">
+
+</section>
+
+<footer>
+  <p>유채진</p>
+</footer>
+
+</body>
+</html>

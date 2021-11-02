@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>제주 쇼핑</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1350px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type:square;/*none --> sqare*/
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 450px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+img.absolute{
+  position : absolute;
+  left: 35%;
+}
+foot{
+  a:{color:white; text-decoration: none;}
+  a:visited{color:white; text-decoration: none;}
+  a:hover{color: white; text-decoration: none;}
+  a:active{color:white; text-decoration: none;}
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- <h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p> -->
+
+<header>
+  <h2>JEJU SHOPPING</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">서귀포매일올레시장</a></li>
+      <li><a href="#">제주동문시장</a></li>
+      <li><a href="#">제주시민속오일장</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>서귀포매일올레시장</h1>
+    주소 : 서귀포시 중앙로 62번길 18
+    연락처 : (+82)064-762-2925
+    홈페이지 : <a href="http://xn-hhOb08q1obf3ndkclthgtcqj988g.com/">http://xn-hhOb08q1obf3ndkclthgtcqj988g.com/</a>
+    <p>
+    대형마트로 인해 자리를 잃어가던 전통 시장이 제주의 향기가 물씬 나는 전통을 찾는 관광객들로 인해 다시 살아나기 시작하면서 ‘서귀포 매일 올레시장’ 역시 서귀포에서 가장 사랑받는 시장으로 자리매김하고 있다. 시장은 아케이드형으로 이루어져 있으며 규모가 서귀포 내에서 가장 크다.
+매일매일 열리는 장임에도 불구하고 늘 활기차고 방문하는 사람들이 많은데, 그 이유가 바로 다양한 먹거리와 볼거리 때문이다.
+흑돼지 크로켓이나 천혜향 음료, 오메기떡과 같이 제주에서만 맛볼 수 있는 특별한 음식들이 줄지어 있음은 물론이고,
+제주와 관련된 포토존이 한쪽에 자리하고 있고, 야외 공연장에서 종종 공연도 한다고 하니 재미난 볼거리까지 제공해 준다.
+약 300여 개의 점포로 적지 않은 수의 가게들이 있지만 깔끔하고 질서 있게 정돈되어 있어 길을 찾거나 구경하고, 다양한 음식을 맛보기에 최적화되어 있다.
+올레시장에서는 고객의 편의를 위해 물건을 원하는 장소에 배달해주는 택배서비스까지 해준다고 하니, 제주만의 간식거리와 아기자기한 소품을 부담 없이 구매할 수 있다.</p>
+<img src="https://api.cdn.visitjeju.net/photomng/imgpath/202110/27/0cb9ead6-ead6-41d3-b0ce-b40e3ebfe795.jpg" alt="https://api.cdn.visitjeju.net/photomng/imgpath/202110/27/0cb9ead6-ead6-41d3-b0ce-b40e3ebfe795.jpg" width="400" height="200">
+</article>
+
+
+<article> <h1>제주동문시장</h1>
+    <p>주소: 제주특별자치도 제주시 관덕로14길 20
+연락처: (+82) 064-752-3001
+홈페이지: <a href="http://dm.market.jeju.kr/">http://dm.market.jeju.kr/</a></p>
+    <p>전통이 있는 따스함과 정겨움으로 가득한 제주 동문 재래시장을 구경해보자.
+제주에서 제일 크고 오래된 시장인 제주 동문 재래시장은 1945년에 형성되었으며 점차 관광객이 늘어나 발걸음이 잦아지면서 상업 중심지로서의 역할을 하고 있다. 곡식, 야채, 생선, 과일 등을 포함한 축산물, 수산물, 건어물뿐만 아니라 생활용품, 신발, 의류 등을 판매하고 있다. 또한 사시사철 각각 다른 가격, 맛으로 유명한 귤을 만나볼 수 있다.
+
+제주 동문 재래시장하면 떠오르는 것이 먹거리이다. 오메기떡, 빙떡이나 한라봉, 귤, 흑돼지와 관련한 먹거리가 가장 유명해 방송매체에서도 소개된 적이 있다.  대표적으로 대게 그라탱, 대게 크로켓, 우도땅콩 아이스크림 등이 있고 제주 특산물 또한 유명하다. 왠지 모를 따뜻함과 정겨움이 가득한 제주 동문 재래시장에서 제주도의 대표적인 먹거리와 시장의 인심을 만나보러 가보기를 추천한다.
+</p>
+<img src="https://api.cdn.visitjeju.net/photomng/imgpath/202008/21/60e6d2a4-064c-49b3-919a-dbb812c86969.JPG" alt="https://api.cdn.visitjeju.net/photomng/imgpath/202008/21/60e6d2a4-064c-49b3-919a-dbb812c86969.JPG" width="400" height="200">
+</article>
+<article> <h3>제주시민속오일장</h3>
+    <p>주소: 제주특별자치도 제주시 오일장서길 26
+연락처: (+82) 064-743-5985
+홈페이지: <a href="jeju5.market.jeju.kr/">jeju5.market.jeju.kr/</a></p>
+    <p>제주민속오일시장은 제주도 내의 재래시장 중에서 가장 오래된 전통을 가지고 있으며,
+제주 사람들의 삶과 역사를 간직해 온 전통적인 공간이다.
+매월 2,7,12,17,22,27일에 열려 한 달에 단 여섯 번만 개장하여 불편할 수 있지만 그만큼 매번 경험하지 못하는 특별함이 있다.
+이곳은 시장 내에 1,200대를 동시에 수용 가능한 주차장을 갖추었고
+접근성을 높이기 위해 진입로를 4곳으로 확대해 이용자들의 편리성을 높였다.
+
+공항에서 10분 이내, 여객선 터미널에서 20분 이내로 이동할 수 있으며
+대중교통을 이용하기 편리한 위치에 자리 잡고 있다.
+
+제주민속오일시장 내에는 약 1000개의 점포가 들어서 있고
+야채 청과류 등의 농산물을 비롯해 어패류, 먹거리 등 다양하게 구성되어 있어서 옛 정취를 만끽할 수 있다.
+</p>
+<img src="https://api.cdn.visitjeju.net/photomng/imgpath/202110/27/c2dc4c71-f88a-42e2-908b-ad3ade9b2c32.jpg" alt="https://api.cdn.visitjeju.net/photomng/imgpath/202110/27/c2dc4c71-f88a-42e2-908b-ad3ade9b2c32.jpg" width="400" height="200">
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
